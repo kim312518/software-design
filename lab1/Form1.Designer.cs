@@ -20,20 +20,54 @@
 			base.Dispose(disposing);
 		}
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		///  Required method for Designer support - do not modify
-		///  the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-			this.components = new System.ComponentModel.Container();
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "Form1";
-		}
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            button1 = new Button();
+            listBox1 = new ListBox();
+            SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(140, 91);
+            button1.Name = "button1";
+            button1.Size = new Size(114, 58);
+            button1.TabIndex = 0;
+            button1.Text = "Sort";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(388, 39);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(366, 319);
+            listBox1.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(listBox1);
+            Controls.Add(button1);
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
+        }
 
-		#endregion
-	}
+        #endregion
+
+        private Button button1;
+        private ListBox listBox1;
+    }
 }
